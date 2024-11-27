@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-weight: 600;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+ 
+}
+/*task*/
+.task{
+    background: linear-gradient(178deg, #d9e0ca, #e5ebd4);
+    padding: 30px 0;
+}
+h1 {
+    color: #333;
+    margin: 10px;
+    font-size: 42px;
+}
+h2{
+    margin:5px;
+    font-size: 32px;
+}
+
+#taskInput {
+    width: 90%;
+    margin: 5px;
+    border: none;
+
+    background-color: #f0ecec;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+}
+.task-list-item{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+ 
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.button-task-filter{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.tasks{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.add-task{
+    display: flex;
+}
+#addTaskBtn{
+    border-radius: 50%;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #648f6e;
+   background:linear-gradient(-30deg, #dae9e4, #29a13d);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+   
+    background: linear-gradient(-15deg, #f1d2d5, #f5d8d8);
+    border: 1px solid #ccc;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+
+li.completed {
+   
+    background: linear-gradient(-30deg, #d5eee6, #a3c5c1);
+}
+
+/*carousel*/
+.slider{
+    margin-top: 100px;
+    background: linear-gradient(130deg, #6275a8, #e7e7e5);
+}
+
+        #carousel {
+            display: flex;
+                justify-content: center;
+                position: relative;
+                width:600px;
+                height: 500px;
+                overflow: hidden;
+                align-items: center;
+                margin: 0 auto;
+        }
+        .image{
+            width:280px;
+            height: 280px;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .active {
+            opacity: 1;
+        }
+        .button {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(199, 224, 218, 0.8);
+            border: none;
+            padding: 10px;
+           transform: translateY(-50%);
+             cursor: pointer;
+        }
+        #prev {
+            left: 15px;
+        }
+        #next {
+            right: 15px;
+        }
+
+
+
+        /*users*/
+
+        .users{padding: 20px;
+            height: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-70deg, #c79ee9, #a6a6a7ee);
+        }
+
+        #userList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #userList li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        #userList img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        #loading {
+            display: none;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        #loading-img{
+            display: none;
+        }
+        #error {
+            color: red;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        h2{padding-top: 20px;
+            text-align: center;
+        }
+

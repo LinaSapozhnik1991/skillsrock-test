@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Tests</title>
+</head>
+<body>
+    <section class="task">
+    <div class="container">
+        <h1>СОЗДАЙ СВОЙ СПИСОК ЗАДАЧ</h1>
+    <div class="tasks">
+        <div class="add-task">
+<input type="text" id="taskInput" placeholder="Добавить новую задачу..." >
+<button id="addTaskBtn">Добавить задачу</button>
+</div>
+<div class="task-list-item">
+    <h2>Список дел:</h2>
+    <div class="button-task-filter">
+    <button id="filterAll">Показать все</button>
+    <button id="filterCompleted">Показать завершенные</button>
+    <button id="filterUncompleted">Показать незавершенные</button>
+</div>
+</div>
+</div>
+    <ul id="taskList"></ul>
+</div>
+</section>
+
+
+<section class="slider">
+    <div class="container">
+        <div id="carousel">
+            <img src="./image/css.png" class="image active" alt="css">
+            <img src="./image/github.png" class="image" alt="github">
+            <img src="./image/html.png" class="image" alt="html">
+            <img src="./image/js.png" class="image" alt="js">
+            <img src="./image/less.png" class="image" alt="less">
+            <img src="./image/logos_bootstrap.png" class="image" alt="logos_bootstrap">
+            <img src="./image/logos_react.png" class="image" alt="logos_react">
+            <img src="./image/tailwind.png" class="image" alt="tailwind">
+            <button id="prev" class="button">Назад</button>
+            <button id="next" class="button">Вперед</button>
+        </div>
+    </div>
+</section>
+
+<section class="users">
+    <h2>СПИСОК ПОЛЬЗОВАТЕЛЕЙ</h2>
+    <img id="loading-img" src="./image/Spinner-1.4s-243px.svg" alt="loading">
+<p id="loading">Загрузка...
+</p>
+<p id="error"></p>
+<ul id="userList"></ul>
+</section>
+
+
+<script src="./script/palindrom.js"></script>
+<script src="./script/task.js"></script>
+<script src='./script/slider.js'></script>
+<script src="./script/users.js"></script>
+<script src="./script/calculator.js"></script>
+<script src="./script/bookLibrary.js"></script>
+<script src="./script/clone.js"></script>
+<script src="./script/bedounce.js"></script>
+    
+   
+
+</body>
+</html>
